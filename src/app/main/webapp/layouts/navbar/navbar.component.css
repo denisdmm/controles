@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "'Alfa Slab One', cursive;";
+  src: url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap'");
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.title{
+  font-family: 'Alfa Slab One';
+  font-size: 5em;
+
+}
+
