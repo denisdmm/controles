@@ -1,9 +1,43 @@
-<mat-form-field >
-  <mat-label >Nome da Atividade</mat-label>
-  <input class="form-control " matInput name="nomeAtividade" type="text" [(ngModel)]="name">
+<div class="flex-container">
+  <div class="form-box shadow-lg p-3 rounded">
+    <form>
+      <div class="form-group px-3">
+        <label for="exampleInputEmail1">Tarefa Executada</label>
+        <input
+          type="text"
+          class="form-control"
+          id="Tarefa Executada"
+          aria-describedby="textHelp"
+        />
+        <small id="textHelp" class="form-text text-muted"
+          >We'll never share your text with anyone else.</small
+        >
+      </div>
 
-  <button *ngIf="name" matSuffix mat-icon-button aria-label="Clear" (click)="name=''">
-    <mat-icon>close</mat-icon>
-  </button>
-</mat-form-field>
-<p></p>
+      <div class="row mt-3 px-3">
+        <div class="form-group col">
+          <label for="mesReferencia">Mês Referência</label>
+          <input type="text" class="form-control" id="mesReferencia" />
+        </div>
+
+        <div class="form-group col">
+          <label for="mesReferencia">Total Concluído</label>
+          <input type="text" class="form-control" id="mesReferencia" />
+        </div>
+      </div>
+
+        <div class="d-flex flex-row-reverse mt-3">
+
+          <button type="button" class="btn btn-size btn-secondary btn-lg mx-3">
+            Cancelar
+          </button>
+
+          <button type="submit" class="btn btn-size btn-primary btn-lg">
+            Registrar
+          </button>
+
+        </div>
+    </form>
+  </div>
+</div>
+<hr class="bt-line5" />
