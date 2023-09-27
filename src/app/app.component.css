@@ -1,7 +1,4 @@
-.navbar {
- background : #c4c3c3
 
-}
 .footer {
   background: #c4c3c3;
   position: fixed;
@@ -11,3 +8,8 @@
   color: white;
   text-align: center;
  }
+
+ .flex-container {
+  display: flex;
+  flex-direction: row;
+}

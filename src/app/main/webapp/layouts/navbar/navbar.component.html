@@ -1,11 +1,27 @@
-<p>
-  <mat-toolbar>
-    <mat-toolbar-row>
-      <span class="title">Controles <mat-icon>date_range</mat-icon></span>
-      <span class="example-spacer"></span>
 
-        <mat-icon>menu</mat-icon>
-    </mat-toolbar-row>
-  </mat-toolbar>
+<div class="navbar title">
+  <div >FICHA DE REGISTRO DE TRABALHOS REALIZADOS</div>
 
-</p>
+  <div class=" flex-container">
+    <img [src]="userImage" alt="">
+
+    <div>
+      <div><span>CB SAD Fulano</span></div>
+      <div><span>( Aux SPE )</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="navbar titulo-ano" >
+  <span >YYYY</span>
+</div>
+
+<div>
+  <div class="navbar titulo-periodo" >
+      <div>
+        <label for="periodoAvaliacao">Período de Avaliação:</label>
+        <span name="periodoAvaliacao" > Nov/(YY-1) a Out/(YY)</span>
+      </div>
+    </div>
+
+</div>
