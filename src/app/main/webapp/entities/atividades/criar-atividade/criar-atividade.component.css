@@ -1,3 +1,28 @@
-.example-form-field {
-  width: 200px;
+@font-face {
+  font-family: "'Alfa Slab One', cursive;";
+  src: url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap'");
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+
+
+}
+.form-box{
+  padding: 20px 0 10px 0px;
+  background-color: #d9d9d9;
+  width: 60rem;
+  margin-top: 1.5em;
+  border-radius: 1.875rem;
+}
+
+.btn-size{
+  padding: 5px 52px;
+
+}
+
+/* Large rounded green border */
+hr.bt-line5 {
+  border: 5px solid black;
 }
