@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {SharedModule} from './main/webapp/shared/shared.module';
 import { NavbarComponent } from './main/webapp/layouts/navbar/navbar.component';
 import { FooterComponent } from './main/webapp/layouts/footer/footer.component';
+import { UsuariosComponent } from './main/webapp/entities/usuarios/usuarios.component';
 
 
 
@@ -15,6 +16,7 @@ import { FooterComponent } from './main/webapp/layouts/footer/footer.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
+    UsuariosComponent,
 
   ],
   imports: [
