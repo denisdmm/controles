@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-criar-atividade',
   templateUrl: './criar-atividade.component.html',
@@ -8,12 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarAtividadeComponent implements OnInit {
 
-  name:string = '';
-
-  constructor() {
-       }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  cancelar() {
+    console.log("botao cancelar clicado");
   }
 }
 

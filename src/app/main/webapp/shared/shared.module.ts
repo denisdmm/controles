@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { SharedLibsModule } from './shared-libs.module';
 
-import { CriarAtividadeComponent } from 'src/app/main/webapp/entities/atividades/criar-atividade/criar-atividade.component';
+import { ListarAtividadeComponent } from '../entities/atividades/listar-atividade/listar-atividade.component';
 
 @NgModule({
   imports: [
     SharedLibsModule,
   ],
   declarations: [
-    CriarAtividadeComponent
 
   ],
   exports: [
-    CriarAtividadeComponent,
     SharedLibsModule
   ]
 })
