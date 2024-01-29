@@ -10,16 +10,9 @@
   object-fit: cover;
 }
 
-
-
-.cardbody-color{
-  background-color: #c4c3c3;
-}
-
 a{
   text-decoration: none;
 }
-
 
 .br-25{
   border-radius: 25px;

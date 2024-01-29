@@ -10,3 +10,7 @@ body{
     font-size: 100%;
     list-style-type: none;
 }
+
+.cardbody-color{
+  background-color: #a1a1a1;
+}

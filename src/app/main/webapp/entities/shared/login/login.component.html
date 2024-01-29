@@ -11,7 +11,7 @@
           </div>
 
           <div class="mb-3">
-            <input type="text" class="form-control" formControlName="username" id="username" aria-describedby="emailHelp" placeholder="User Name">
+            <input type="text" class="form-control" formControlName="username" id="username" aria-describedby="username" placeholder="User Name">
           </div>
           <div class="mb-3">
             <input type="password" class="form-control" formControlName="password" id="password" placeholder="password">
@@ -22,8 +22,9 @@
             <p *ngIf='mensagem != ""' class="form-text text-center  text-alert mt-2">{{ mensagem }}</p>
           </div>
           <div id="emailHelp" class="form-text text-center  text-dark">Not
-            Registered? <a href="#" class="text-dark fw-bold"> Create an
-              Account</a>
+            Registered?
+            <a routerLink="/registro" routerLinkActive="selected"
+            class="text-dark fw-bold"> Create an Account  </a>
           </div>
         </form>
       </div>

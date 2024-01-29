@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from "@angular/forms";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { LoginModel } from '../../../models/LoginModel';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,45 +10,44 @@ import { FormBuilder } from "@angular/forms";
 })
 export class LoginComponent implements OnInit {
   userImage!: string;
-  username!: "admin";
-  password!: "123";
+  username: string =  "admin";
+  password: string = "123";
   mensagem!: string;
-  formLogin: any;
+  formLogin!: FormGroup;
 
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router ) {
     this.userImage = '/assets/imagens/userCircle.png';
-
-    this.criarForm();
 
   }
 
   ngOnInit(): void {
-  }
-
-  criarForm() {
-
     this.formLogin = this.formBuilder.group({
 
-      username: [''],
+      username: ['',[Validators.required]],
 
-      password: ['']
+      password: ['', [Validators.required]]
 
     });
+  }
+  clearForm(){
 
   }
-
   login() {
+      // debugger
+      var dadosLogin = this.formLogin.getRawValue() as LoginModel;
+      if ( dadosLogin.username == this.username
+            && dadosLogin.password == this.password ){
+              this.mensagem = "Login feito com sucesso!";
+              this.formLogin.reset;
+              // this.router.navigate(['/home'])
 
-    if (this.formLogin.get('username').value == this.username && this.formLogin.get('password').value == this.password) {
-
-      this.mensagem = "Login feito com sucesso!";
-
-    } else {
-
-      this.mensagem = "Usuário ou a senha estão errados!";
-
-    }
+      }
+      else{
+        this.mensagem = "Usuário ou a senha esta incorreto!";
+      }
 
   }
 

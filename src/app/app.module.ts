@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +11,8 @@ import { UsuariosComponent } from './main/webapp/entities/usuarios/usuarios.comp
 import { ListarAtividadeComponent } from './main/webapp/entities/atividades/listar-atividade/listar-atividade.component';
 import { RouterModule } from '@angular/router';
 import { CriarAtividadeComponent } from './main/webapp/entities/atividades/criar-atividade/criar-atividade.component';
+import { LoginComponent } from './main/webapp/entities/shared/login/login.component';
+import { RegistroComponent } from './main/webapp/entities/shared/login/registro/registro.component';
 
 
 
@@ -22,6 +25,8 @@ import { CriarAtividadeComponent } from './main/webapp/entities/atividades/criar
     UsuariosComponent,
     ListarAtividadeComponent,
     CriarAtividadeComponent,
+    LoginComponent,
+    RegistroComponent,
 
 
   ],
@@ -29,7 +34,8 @@ import { CriarAtividadeComponent } from './main/webapp/entities/atividades/criar
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
 
   ],
   exports: [
